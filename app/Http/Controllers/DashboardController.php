@@ -53,7 +53,7 @@ class DashboardController extends Controller
                 return redirect(route('dashboard.resetPassword'))->with('pesan',['danger','anda gagal merubah password']);
             }
         }else{
-            return redirect(route('dashboard.resetPassword'))->with('pesan',['success','Password lama salah']);
+            return redirect(route('dashboard.resetPassword'))->with('pesan',['danger','Password lama salah']);
         }
     }
 }
